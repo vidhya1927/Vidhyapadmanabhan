@@ -25,7 +25,7 @@ public class AddToCart extends GeneralUtility {
 	}
 
 	/**********************************************************************************
-	Date:
+	Date: 07/05/2025
 	Author: Vidhya P
 	Description: This method will perform add the product to Cart. 
 	***********************************************************************************/
@@ -40,7 +40,7 @@ public class AddToCart extends GeneralUtility {
 		Thread.sleep(5000);
 		Alert alert2 = driver.switchTo().alert();
 		String AlertText2 = alert2.getText();
-		Assert.assertEquals("Product added.", AlertText2);
+		Assert.assertEquals("Product added", AlertText2);
 		alert2.accept();
 		test.log(LogStatus.PASS, "Add to Cart Successful");
 		}
